@@ -1,0 +1,24 @@
+RAY APONTE GALLERY — FRESH START
+===============================
+
+No older website files are needed.
+
+1. Extract this ZIP.
+2. Open index.html to preview the complete dark gallery with all 10 provided artworks.
+3. Open admin.html to see the private artist-studio setup screen.
+4. Create a NEW GitHub repository, and upload the CONTENTS of this folder
+   (including assets/artwork/) to your repository root.
+5. Enable GitHub Pages in repository Settings > Pages when ready to publish.
+6. To activate the artist login and upload/edit/price controls, create a
+   Supabase project and follow README.md and supabase-setup.sql.
+
+Public demo gallery works immediately. Live artist login is NOT active until
+Supabase is configured, with an approved artist account.
+
+PLEASE NOTE:
+- Study 01–10 titles/descriptions are provisional; confirm with Ray.
+- Confirm he approves displaying the photographs and public contact info.
+- Never paste a secret/service-role key or personal password into config.js.
+- This website does not collect payments; artwork inquiries only.
+
+OPEN README.md FOR COMPLETE SETUP AND COLLABORATION INSTRUCTIONS.

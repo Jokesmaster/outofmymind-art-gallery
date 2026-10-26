@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore artwork by Ray Aponte: surreal drawings, intricate graphite textures, organic forms, and expressive paintings.">
+  <meta name="theme-color" content="#090909">
+  <title>Ray Aponte | Artist & Original Works</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="config.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="top-note"><span>INDEPENDENT ARTIST / ORIGINAL WORKS</span><span>THE UNFAMILIAR, MADE VISIBLE</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ray Aponte — homepage"><span class="brand-name">RAY APONTE<span class="brand-mark">✳</span></span><span class="brand-subtitle">ARTIST / PORTFOLIO</span></a>
+    <nav aria-label="Primary navigation" class="main-nav">
+      <a href="#work">THE WORK <span class="nav-index">01</span></a>
+      <a href="#artist">THE ARTIST <span class="nav-index">02</span></a>
+      <a href="#contact">CONTACT <span class="nav-index">03</span></a>
+    </nav>
+    <a class="header-inquiry" href="#contact">INQUIRE <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="accent-dash"></span> THE WORK OF RAY APONTE</p>
+        <h1 id="hero-title">Where the<br><em>strange</em><br>takes form<span class="red-period">.</span></h1>
+        <p class="hero-text">Surreal figures. Intricate worlds. A restless exploration of the beautiful and the unsettling.</p>
+        <a class="main-button" href="#work">ENTER THE GALLERY <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span>DRAWING · PAINTING · EXPRESSION</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/artwork/art-02.webp" alt="Surreal graphite artwork by Ray Aponte featuring a winged monstrous figure, gnarled forms, and intricate shading" fetchpriority="high">
+        <div class="hero-photo-shade" aria-hidden="true"></div>
+        <div class="hero-vertical-label" aria-hidden="true">ORIGINAL ARTWORK / RA</div>
+        <div class="hero-image-index" aria-hidden="true"><span>FIG. 002</span><span>RAY APONTE / ARCHIVE</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Portfolio overview"><span>EXPLORING THE EDGES OF IMAGINATION</span><span class="asterisk">✳</span><span>NO TWO PIECES TELL THE SAME STORY</span></section>
+
+    <section class="work-section" id="work" aria-labelledby="work-heading">
+      <div class="section-overline"><span class="section-seq">01 / EXHIBITION</span><span class="section-rule"></span><span>THE ARCHIVE</span></div>
+      <div class="work-heading-row"><div><p class="small-kicker">A CLOSER LOOK</p><h2 id="work-heading">Selected <em>works.</em></h2></div><p class="work-deck">Explore the details. Sit with the unfamiliar. Discover the worlds within each piece.</p></div>
+      <div class="gallery-toolbar"><div class="gallery-filters" role="group" aria-label="Filter artwork">
+        <button class="filter active" type="button" data-category="all" aria-pressed="true">ALL WORK <span class="filter-index">/ 00</span></button>
+        <button class="filter" type="button" data-category="surreal" aria-pressed="false">SURREAL</button>
+        <button class="filter" type="button" data-category="botanical" aria-pressed="false">BOTANICAL</button>
+        <button class="filter" type="button" data-category="abstract" aria-pressed="false">ABSTRACT</button>
+        <button class="filter" type="button" data-category="other" aria-pressed="false">OTHER</button>
+      </div><div class="gallery-options"><label class="available-toggle" id="availableControl"><input type="checkbox" id="availableOnly"> AVAILABLE ONLY</label><span class="piece-total"><span id="artworkCount">00</span> PIECES</span></div></div>
+      <div id="artworkGrid" class="artwork-grid" aria-live="polite"></div>
+      <p id="galleryMessage" class="gallery-message" hidden></p>
+      <p id="demoNotice" class="demo-notice" hidden><span aria-hidden="true">✳</span> <strong>Exhibition preview.</strong> These are photographs supplied for this project. Artwork titles, sale status, and descriptive information are pending confirmation from Ray. When the artist dashboard is connected, this gallery will show pieces Ray publishes there.</p>
+    </section>
+
+    <section class="feature-section" aria-label="Artist expression and range">
+      <div class="feature-text"><p class="small-kicker">NOT EVERYTHING LIVES IN GRAYSCALE</p><h2>Another side<br>of the <em>canvas.</em></h2><p>From graphite textures to bold, expressive color, the work shifts in material and mood without losing its intensity.</p><a class="inline-link" href="#work">EXPLORE THE COLLECTION <span aria-hidden="true">↗</span></a><span class="feature-aside">STUDY IN CONTRAST / 002</span></div>
+      <div class="feature-image"><img src="assets/artwork/art-06.webp" alt="Ray Aponte painting with vigorous red, orange, yellow, and black marks and abstract facial forms" loading="lazy"></div>
+    </section>
+
+    <section class="artist-section" id="artist" aria-labelledby="artist-heading">
+      <div class="section-overline"><span class="section-seq">02 / THE ARTIST</span><span class="section-rule"></span><span>BEHIND THE MARKS</span></div>
+      <div class="artist-layout"><div class="artist-portrait"><img src="assets/artwork/art-03.webp" alt="Ray Aponte's intricate graphite composition of a skull surrounded by flowers" loading="lazy"><span class="portrait-caption">DETAIL FROM THE COLLECTION / RA</span></div>
+      <div class="artist-copy"><p class="small-kicker">MEET THE ARTIST</p><h2 id="artist-heading">Ray<br><em>Aponte.</em></h2><p class="artist-standfirst">An archive of intricate imagery and unapologetic expression.</p><div class="artist-description"><p>Ray's supplied works move between surreal creatures, botanical forms, layered faces, and vivid abstraction. Fine lines and dense textures invite a second look.</p><p class="bio-notice">Artist biography coming soon. This section will be replaced with Ray’s own story, influences, and creative process.</p></div><a href="#contact" class="inline-link">GET IN TOUCH <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="contact-top"><span>03 / INQUIRIES</span><span>CONVERSATIONS BEGIN HERE</span></div><div class="contact-content"><div><p class="small-kicker">COLLECTING / COLLABORATING / CONNECTING</p><h2 id="contact-heading">See something<br>that <em>stays with you?</em></h2><p>For questions about artwork, availability, or future projects, reach out to the artist.</p></div><div class="contact-links"><a id="emailLink" href="#contact" hidden>EMAIL RAY <span aria-hidden="true">↗</span></a><a id="instagramLink" href="#contact" hidden target="_blank" rel="noopener noreferrer">INSTAGRAM <span aria-hidden="true">↗</span></a><span id="contactPending" class="contact-pending">CONTACT DETAILS COMING SOON</span></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-brand">RAY APONTE <span>✳</span></div><p>© <span id="year"></span> RAY APONTE. ALL ARTWORK RIGHTS RESERVED.</p><a href="admin.html">ARTIST LOGIN <span aria-hidden="true">↗</span></a></footer>
+
+  <dialog id="artworkDialog" class="artwork-dialog" aria-labelledby="dialogTitle"><button id="closeDialog" type="button" class="dialog-close" aria-label="Close artwork details">✕</button><div class="dialog-layout"><div id="dialogImage" class="dialog-image"></div><div class="dialog-copy"><span class="small-kicker">RAY APONTE / ARTWORK DETAIL</span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><div id="dialogFacts" class="dialog-facts"></div><div class="dialog-bottom"><strong id="dialogPrice"></strong><a id="dialogContact" href="#contact" class="main-button">INQUIRE ABOUT THIS PIECE <span aria-hidden="true">↗</span></a></div></div></div></dialog>
+</body>
+</html>
